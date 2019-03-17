@@ -1,0 +1,36 @@
+{
+  "name": "@salilvnair/web-util",
+  "version": "0.0.1",
+  "description": "All commonly used web project typescript utility",
+  "scripts": {
+    "minify": "uglifyjs-folder dist/lib -eo dist/lib",
+    "build": "tsc && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salilvnair/web-util.git"
+  },
+  "keywords": [
+    "web-util",
+    "image-nude-detector"
+  ],
+  "author": "Salil V Nair",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salilvnair/web-util/issues"
+  },
+  "homepage": "https://github.com/salilvnair/web-util#readme",
+  "devDependencies": {
+    "@types/node": "^11.11.3",
+    "uglify-js": "^3.4.10",
+    "uglifyjs-folder": "^1.5.1"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "main": "dist/public_api.js",
+  "types": "dist/public_api.d.ts",
+  "dependencies": {
+    "canvas": "^2.4.0"
+  }
+}
